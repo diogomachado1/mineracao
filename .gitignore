@@ -1,4 +1,6 @@
-/CVS/*
-**/CVS/*
-.cvsignore
-*/.cvsignore
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+Info.csv
