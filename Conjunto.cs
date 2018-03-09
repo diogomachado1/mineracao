@@ -8,6 +8,7 @@ namespace Mineração
 {
     class Conjunto
     {
+        //test
         public Conjunto(int faixaIdade, int faixaReprovacao)
         {
             this.faixaIdade = faixaIdade;
