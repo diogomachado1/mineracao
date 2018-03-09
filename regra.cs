@@ -9,11 +9,11 @@ namespace Mineração
 {
     class Regra
     {
-        public List<List<string>> lerAquivo()
+        public List<List<string>> lerAquivo(string csv)
         {
             try
             {
-                StreamReader rd = new StreamReader("./Info.csv");
+                StreamReader rd = new StreamReader(csv);
                 string linha = null;
                 string[] linhaseparada = null;
                 linha = rd.ReadLine();
@@ -24,7 +24,7 @@ namespace Mineração
                 {
                     lista = new List<string>();
                     linhaseparada = linha.Split(';');
-                    lista.Add(linhaseparada[0]);
+                    lista.Add(linhaseparada[0]);//escolhendo as colunas do meu interresse
                     lista.Add(linhaseparada[4]);
 
                     strings.Add(lista);

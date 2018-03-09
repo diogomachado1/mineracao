@@ -12,7 +12,7 @@ namespace Mineração
         {
             var regra=new Regra();
             regra=new Regra();
-            regra.metodo1(new Conjunto(0,0).conjuntos(),regra.lerAquivo(),0.0005,0.04);
+            regra.metodo1(new Conjunto(0,0).conjuntos(),regra.lerAquivo("./Info.csv"),0.0005,0.04);//usei um banco de dados
 
 
 
